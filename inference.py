@@ -112,7 +112,7 @@ categories = ['Breakfast', 'Lunch', 'Dinner', 'Snack 1', 'Snack 2']
 def home(): 
   
    payload = request.json
-   print(payload)
+
    cal_need = calculate_daily_calorie_requirement(payload["weight"], payload["height"], payload["sex"], payload["age"], payload["daily_activity"], payload["goal"])
    process_data = preprocess_input(cal_need,payload["halal"], payload["vegetarian"] , payload["vegan"], payload["gluten_free"], payload["dairy_free"])
 
@@ -150,6 +150,7 @@ def home():
         }) 
 
      menu_info["Total Calories"] = total_calories
+     menu_info["Requirement_Calorie"]= cal_need
      output.append(menu_info)
 
    
