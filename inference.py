@@ -156,7 +156,8 @@ def home():
      output.append(menu_info)
 
    Calorie = {"requirement": cal_need}
-   return output.append(Calorie)
+   output.append(Calorie)
+   return output
 
 
 if __name__ == '__main__' : 
