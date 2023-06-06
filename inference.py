@@ -149,7 +149,7 @@ def home():
             "Instructions": instructions
         }) 
 
-     menu_info["Total Calories"] = total_calories
+     menu_info["Total Calories"] = int(total_calories)
      menu_info["Requirement_Calorie"]= int(cal_need)
      output.append(menu_info)
 
