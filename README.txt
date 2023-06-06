@@ -30,7 +30,8 @@ pip install -r requirements.txt
 4. Run the application:
 - Execute the following command to generate the weekly meal plan:
   ```
-  python inference.py
+  python inference.py (development)
+  waitress-serve --listen=*:8000 app:app(production)
   ```
 
 5. View the output:
