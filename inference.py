@@ -155,7 +155,7 @@ def home():
     
      output.append(menu_info)
 
-   Calorie = {"requirement": cal_need}
+   Calorie = {"requirement": int(cal_need)}
    output.append(Calorie)
    return output
 
