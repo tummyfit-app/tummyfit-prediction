@@ -134,6 +134,7 @@ def home():
         dairy_free = "Yes" if menu['Dairy Free'] == 1 else "No"
         ingredients = menu['Ingredients']
         instructions = menu['Instructions']
+        imageurl = menu['Image']
         
 
         menu_info["Menu"].append({
@@ -146,7 +147,8 @@ def home():
             "Gluten Free": gluten_free,
             "Dairy Free": dairy_free,
             "Ingredients": ingredients,
-            "Instructions": instructions
+            "Instructions": instructions,
+            "Image": imageurl
         }) 
 
      menu_info["Total Calories"] = int(total_calories)
