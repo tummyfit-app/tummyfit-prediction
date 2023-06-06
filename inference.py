@@ -3,6 +3,7 @@ import pandas as pd
 import tensorflow as tf
 import os
 from flask import Flask, jsonify ,request
+from waitress import serve
 
 app  = Flask(__name__)
 # Update the model and weight file paths
@@ -156,4 +157,4 @@ def home():
 
 
 if __name__ == '__main__' : 
-    app.run(port=8080, debug=True)
+    app.run(host="0.0.0.0" , port=8000)
