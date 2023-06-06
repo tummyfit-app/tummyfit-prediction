@@ -3,7 +3,7 @@ import pandas as pd
 import tensorflow as tf
 import os
 from flask import Flask, jsonify ,request
-from waitress import serve
+
 
 app  = Flask(__name__)
 # Update the model and weight file paths
