@@ -99,7 +99,7 @@ def calculate_daily_calorie_requirement(weight, height, sex, age, daily_activity
 
 
 # Read food data
-food_data_path = 'food_data\data-tummyfit-v4.csv'
+food_data_path =os.path.join('food_data', 'data-tummyfit-v4.csv')
 food_data = pd.read_csv(food_data_path)
 
 # Food categories
